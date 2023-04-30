@@ -1,16 +1,5 @@
 <?php
 
-// Визначаємо URI та розділяємо його на окремі елементи
-//$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
-//$uri = rtrim($request_uri[0], '/');
-//$uri_parts = explode('/', $uri);
-
-// Визначаємо, яку сторінку користувач хоче відвідати
-//$page = '';
-//if (count($uri_parts) == 1) {
-//    $page = $uri_parts[0];
-//}
-
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
